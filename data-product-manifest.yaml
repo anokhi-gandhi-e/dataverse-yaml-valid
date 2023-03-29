@@ -78,7 +78,13 @@ stateManagement:
       - cust_birthday
       - cust_nationality
 transformation:
-  sql: select * from usersS3
+  - alias: Transform-1
+    type: SQL
+    description: Join input1 and input2 to get the actual member name
+    query: select * from usersS3
+    references:
+    - alias: input1
+      sqlReference: i1
 outputPort:
   channels:
   - channelType: JDBC
