@@ -46,7 +46,7 @@ inputPorts:
         - buy_price_by_area
 stateManagement:
   alias: users_count_by_gender
-  refreshInterval: 00 10 * * *
+  refreshInterval: 00 12 * * *
   retentionVersions: "10"
   updateStrategy: SCD-2
   productStoreState:
