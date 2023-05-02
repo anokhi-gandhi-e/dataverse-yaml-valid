@@ -10,6 +10,11 @@ discoveryPort:
   industryDomain: Rental
   function: Rental
   category: customer
+  regulatoryFields: 
+    privacy-PublicOrPrivate: Public,
+    customerSpecific-PIIOrnonPII: non-PII,
+    origin-MachineGeneratedOrHumanGenerated: Machine generated,
+    monetary-FinancialOrnoFinancialData: non-financial
   image: http://google.com
   autofillUserinfo: true
   tags:
